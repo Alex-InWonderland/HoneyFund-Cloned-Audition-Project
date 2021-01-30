@@ -6,8 +6,9 @@
   <title>Front End Audition</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="stylesheet" href="https://use.typekit.net/cpn2swf.css">
   <link rel="stylesheet" href="dist/audition.css">
+  <link rel="stylesheet" href="css/cta-styles.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -15,22 +16,26 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <div class="container">
 
-    <div class="row">
-      <div class="col">
-        <section>
-          <div>
-            <p>Great! Your registry is published and ready to be shared.</p>
-            <a href="/">Share</a>
-            <a href="/">Preview</a>
-            <a href="/">Edit</a>
-          </div>
-        </section>
-      </div>
+  <div id="outer-flex-container">
+    <div id="paragraph-div">
+      <p id="first-paragraph">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-exclamation-square-fill" viewBox="0 0 16 16">
+          <path
+            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </svg>
+        <span class="p-span">You're almost there!</span> Add payment
+        settings and you're ready to share.</p>
+      <p id="second-paragraph"><span class="p-span">Great!</span> Your registry is published and ready to be shared.</p>
     </div>
 
-  </div>
+    <div id="button-div">
+      <button>Button</button>
+      <button>Button</button>
+      <button>Button</button>
+    </div>
+  </div><!-- end of outer-flex-container -->
 
 </body>
 

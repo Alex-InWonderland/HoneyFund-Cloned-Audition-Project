@@ -1,3 +1,132 @@
+
 // Bootstrap
 @import "vendor/bootstrap/scss/bootstrap.scss";
+
+/* Mobile Design (Mobile First) */
+
+body{
+    font-family: muli, sans-serif;
+}
+
+#outer-flex-container{
+    border: 20px solid #F8F8FF;
+
+    p {
+        text-align: center;
+        padding-top: 20px;
+    
+        .bi-exclamation-square-fill {
+            color: orange;
+            max-width: 100%;
+            height: auto;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+
+    #first-paragraph {
+        display: none;
+    }
+    
+    #button-div{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    
+        button{
+            border: 2px solid #007bff;
+            background-color: white;
+            padding: 12px 40px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #007bff;
+            font-size: 15px;
+        
+            margin: 12px;
+            width: 100%;
+        
+        }
+        
+        button:nth-child(1) {
+            background-color: #007bff;
+            color: white;
+        }
+    }
+
+    /* Breakpoint Starting Below */
+
+    /* Tablet Design */
+    @media screen and (min-width: 688px){
+
+        #button-div{
+            flex-direction: row;
+            button{
+                width: 50%;
+            }
+        }
+        
+    }
+
+    /* Small Desktop Design */
+
+    @media screen and (min-width: 992px) {
+
+            #first-paragraph {
+                display: block;
+            }
+
+            #second-paragraph {
+                display: none;
+            }
+
+            #paragraph-div{
+                flex-basis: 50%;
+                p{
+                    margin-top: 6px;
+                }
+
+                .p-span{
+                    font-weight: bold;
+                }
+            } 
+        
+            #button-div{
+                width: 0;
+                flex-basis: 50%;
+                button{
+                    width: 30%;
+                }
+            }
+        }  
+    }
+
+    /* Larger Desktop Design */
+    @media screen and (min-width: 1312px){
+            #button-div{
+                flex-basis: 40%;
+            }
+        }   
+
+
+/* Small Desktop Design- Outer Flex Container Styles */
+
+@media screen and (min-width: 992px) {
+    #outer-flex-container{
+        display: flex;
+    }
+}
+
+/* Larger Desktop Design- Outer Flex Container Styles */
+@media screen and (min-width: 1312px){
+    #outer-flex-container{
+        justify-content: space-around;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+}
+
 
